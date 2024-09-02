@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        String[] questions = new String[5];
+
+        questions[0] = "what comes out of a xenomorph egg?";
+        questions[1] = "whats ,its gameover man' from? ";
+        questions[2] = "what was the first android in the alien franchise? ";
+        questions[3] = "what is the xenomorph that lays eggs ";
+        questions[4] = "what movie did a xenomorph first appear ";
+
+
+        String[] answers = new String[5];
+
+        answers[0] = "facehugger";
+        answers[0] = "aliens 2";
+        answers[0] = "ash";
+        answers[0] = "queen";
+        answers[0] = "alien";
+
+
+        Scanner scanner = new Scanner(System.in);
+        int points = 0;
+
+        for(int i = 0; i < questions.length; i++) {
+       PrintQuestions(questions[i]);
+       String useranswer = scanner.next();
+
+       if(iscorrectanswer(useranswer, answer[i])) {
+           System.out.println("that was the correct answer");
+           points++;
+           System.out.println("you had " + points + " points");
+       }else{
+           System.out.println("that was incorrect answer");
+           System.out.println("the correct answer was: " + answers[1]);
+
+
+
+
+       }
+
+
+
+
+
+       }
+
+
+
+        public static void PrintQuestions(String questions) {
+            System.out.println(questions);
+
+
+        }
+
+public static boolean iscorrectanswer (String useranswer, String realanswer) {
+            return useranswer.equals(realanswer);
+
+
+        }
+
+
+
+
+
+
+    }
+}
